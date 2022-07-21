@@ -11,7 +11,7 @@ body{
 header{
     background: #161616;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    width: 1321px;
+    width: 1280px;
     height: 500px;
     border-radius: 15px;
     margin: 30px auto;
@@ -21,7 +21,7 @@ header{
 .leftContent{
     position: absolute;
     width: 500px;
-    left: 70px;
+    left: 75px;
     top: 70px;
 }
 header h1{
@@ -38,7 +38,7 @@ header p{
     color: #fff;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    
+    padding: 15px 0;
 }
 .link-button{
     color: #fff;
@@ -70,10 +70,10 @@ header p{
     background: #FF3800;
 }
 .rightContent{
-    background: url(../assets/bannerImg.png);
-    width: 323px;
-    height: 340px;
+    background: url(../assets/playerImg.png) no-repeat;
+    width: 401px;
+    height: 480px;
     position: absolute;
-    right: 0;
+    right: 75px;
     bottom: 0;
 }
