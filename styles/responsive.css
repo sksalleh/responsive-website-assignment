@@ -9,5 +9,8 @@
     body {
       background-color: yellow;
     }
+    .leftMenu {
+        flex-direction: row;
+    }
 }
 

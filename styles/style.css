@@ -6,13 +6,13 @@ body{
      margin: 0;
      padding: 0;
 }
-
 .container{
     width: 1180px;
     margin: 30px auto;
     position: relative;
 }
- /* header css */
+
+ /* header banner css */
 header{
     background: #161616;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -66,7 +66,11 @@ header p{
     position: absolute;
     right: 75px;
     bottom: 0;
+    animation-name: example;
+    animation-duration: 4s;
 }
+
+/* matchlist with left menu css start  */
 .matchList{
     margin-top: 70px;
 }
@@ -78,20 +82,40 @@ header p{
     border-radius: 10px;
     width: 260px;
     padding: 20px;
+    flex-direction: column;
+    display: flex;
+    float: left;
+    margin-right: 20px;
 }
-.leftMenu ul,
+/* .leftMenu ul, */
 footer ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 .leftMenu li{
-    margin: 15px 0;
+    
 }
-
 .leftMenu li a{
-    display: block;
+    /* display: block; */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #fff;
+    color: #161616;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 10px;
+    transition: 1s; */
+}
+.leftMenu .menuLink{
+    margin: 8px 0;
+    text-align: center;
+}
+.leftMenu .menuLink{
     background: #fff;
     color: #161616;
     font-weight: bold;
@@ -101,15 +125,77 @@ footer ul{
     padding: 15px 0px;
     border-radius: 10px;
     transition: 1s;
+
 }
-.leftMenu li.active a, .leftMenu li a:hover{
+.leftMenu .menuLink.active, .leftMenu .menuLink:hover{
     background: #DD0000;
     color: #fff;
 }
+.leftMenu .menuLink.active a, .leftMenu .menuLink a:hover{
+    /* background: #DD0000;
+    color: #fff; */
+}
+.leftMenu li.active a, .leftMenu li a:hover{
+    /* background: #DD0000;
+    color: #fff; */
+}
+.allMatchList{
+    display: grid;
+    gap: 15px 15px;
+    grid-template-columns: 275px 275px 275px;
+}
+.single-match{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(22, 22, 22, 0.7);
+    /* width: 312px; */
+}
+.smImage img{
+    width: 100%;
+    height: auto;
+}
+.single-match .matchDetails{
+    padding: 20px;
+}
+.single-match .transferBtn{
+    border: 1px solid #161616;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #161616;
+    display: inline-block;
+    padding: 7px 15px;
+    font-weight: bold;
+    transition: 1s;
+}
+.single-match .transferBtn:hover{
+    background: #161616;
+    color: #fff;
+}
+.single-match .matchTitle{
+    color: #161616;
+    font-weight: bold;
+}
+.single-match .time{
+    background: url(../assets/TimeIcon.png) no-repeat center left;
+    width: 24px;
+    height: 24px;
+    padding: 3px 0 3px 30px;
+    margin-right: 20px;
+}
+.single-match .comment{
+    background: url(../assets/ChatIcon.png) no-repeat center left;
+    width: 24px;
+    height: 24px;
+    padding: 3px 0 3px 30px;
+}
+
+/* footer css */
 footer{
     clear: both;
     background: #161616;
     padding: 40px 0;
+    margin-top:100px;
     text-align: center;
 }
 footer h4{
