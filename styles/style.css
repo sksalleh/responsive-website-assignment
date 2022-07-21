@@ -66,8 +66,6 @@ header p{
     position: absolute;
     right: 75px;
     bottom: 0;
-    animation-name: example;
-    animation-duration: 4s;
 }
 
 /* matchlist with left menu css start  */
@@ -75,9 +73,6 @@ header p{
     margin-top: 70px;
 }
 .leftMenu{
-    /* position: absolute;
-    left: 0;
-    top:0; */
     background: #161616;
     border-radius: 10px;
     width: 260px;
@@ -93,24 +88,7 @@ footer ul{
     margin: 0;
     padding: 0;
 }
-.leftMenu li{
-    
-}
-.leftMenu li a{
-    /* display: block; */
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: #fff;
-    color: #161616;
-    font-weight: bold;
-    font-family: 'Quicksand', sans-serif;
-    text-decoration: none;
-    text-align: center;
-    padding: 15px 0px;
-    border-radius: 10px;
-    transition: 1s; */
-}
+
 .leftMenu .menuLink{
     margin: 8px 0;
     text-align: center;
@@ -131,14 +109,7 @@ footer ul{
     background: #DD0000;
     color: #fff;
 }
-.leftMenu .menuLink.active a, .leftMenu .menuLink a:hover{
-    /* background: #DD0000;
-    color: #fff; */
-}
-.leftMenu li.active a, .leftMenu li a:hover{
-    /* background: #DD0000;
-    color: #fff; */
-}
+
 .allMatchList{
     display: grid;
     gap: 15px 15px;
