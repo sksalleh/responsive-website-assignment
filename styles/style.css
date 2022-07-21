@@ -7,15 +7,18 @@ body{
      padding: 0;
 }
 
+.container{
+    width: 1180px;
+    margin: 30px auto;
+    position: relative;
+}
  /* header css */
 header{
     background: #161616;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    width: 1280px;
     height: 500px;
     border-radius: 15px;
-    margin: 30px auto;
-    position: relative;
+    padding: 30px 0 0 0;
 }
 
 .leftContent{
@@ -76,4 +79,41 @@ header p{
     position: absolute;
     right: 75px;
     bottom: 0;
+}
+.matchList{
+    margin-top: 70px;
+}
+.leftMenu{
+    position: absolute;
+    left: 0;
+    top:0;
+    background: #161616;
+    border-radius: 10px;
+    width: 260px;
+    padding: 20px;
+}
+.leftMenu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.leftMenu li{
+    margin: 15px 0;
+}
+.leftMenu li a{
+    display: block;
+    background: #fff;
+    color: #161616;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.leftMenu li.active a, .leftMenu li a:hover{
+    background: #DD0000;
+    color: #fff;
 }
