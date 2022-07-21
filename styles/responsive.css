@@ -3,6 +3,9 @@
     body {
       background-color: red;
     }
+    .viewAll{
+      display: block;
+  }
 }
 
 @media (max-width: 576px){
