@@ -51,23 +51,10 @@ header p{
     padding: 16px 25px 16px 25px;
     transition: 1s;
     display: inline-block;
-
-    /* display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 16px 25px;
-    gap: 10px;
-
-    position: absolute;
-    width: 187px;
-    height: 56px;
-    left: 246px;
-    top: 529px; */
-
     background: #DD0000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-
+    font-weight: bold;
 }
 .link-button:hover{
     background: #FF3800;
@@ -84,9 +71,9 @@ header p{
     margin-top: 70px;
 }
 .leftMenu{
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    top:0;
+    top:0; */
     background: #161616;
     border-radius: 10px;
     width: 260px;
@@ -102,9 +89,7 @@ footer ul{
 .leftMenu li{
     margin: 15px 0;
 }
-.leftMenu li:last-child{
-    
-}
+
 .leftMenu li a{
     display: block;
     background: #fff;
@@ -124,31 +109,55 @@ footer ul{
 footer{
     clear: both;
     background: #161616;
-    padding: 50px 0;
+    padding: 40px 0;
     text-align: center;
 }
 footer h4{
     font-family: 'Patua One', cursive;
     color: #fff;
     font-size: 25px;
-    
     letter-spacing: 1.5px;
 }
 hr{
     border: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 25px;
 }
-footer li{
+.footer-links li{
     display: inline-block;
     padding: 0 25px;
 }
-footer li a{
+.footer-links li a{
     color: #B9B9B9;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
     transition: 1s;
 }
-footer li a:hover{
+.footer-links li a:hover{
     color: #fff;
+}
+.social-icons{
+    margin-top: 35px;
+}
+.social-icons li{
+    display: inline-block;
+    padding: 0 5px;
+}
+.social-icons li a{
+    background-color: #DD0000;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 50%;
+    transition: .5s ease;
+    text-decoration: none;
+}
+.social-icons li a:hover{
+    transform: rotate(360deg);
+    background: #FF3800;
+
 }
